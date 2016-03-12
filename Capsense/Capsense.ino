@@ -18,7 +18,7 @@ bool clicked = false;
 void setup() {
   Serial.begin(9600);
   for(int i = 0;i<5;i++){
-    sensors[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
+    //sensors[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
   }
 }
 
