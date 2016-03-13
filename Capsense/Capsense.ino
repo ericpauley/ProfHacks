@@ -20,6 +20,7 @@ void setup() {
   for(int i = 0;i<5;i++){
     //sensors[i].set_CS_AutocaL_Millis(0xFFFFFFFF);
   }
+  pinMode(9, INPUT_PULLUP);
 }
 
 void loop() {
@@ -59,6 +60,8 @@ void loop() {
   Serial.print(max(min(runAvRight,100),-100));
   Serial.print(" ");
   Serial.print(max(min(runAvTop,100),-100));
+  Serial.print(" ");
+  Serial.print(digitalRead(9));
   Serial.println();
   
   cycleNum++;
